@@ -89,11 +89,7 @@ class _LoginScreenState extends State<LoginScreen> {
           value: SystemUiOverlayStyle.dark,
           child: Container(
             decoration: const BoxDecoration(
-              gradient: LinearGradient(
-                begin: Alignment.topCenter,
-                end: Alignment.bottomCenter,
-                colors: [Color(0xFFF5F7FA), Color(0xFFE4E7EC)],
-              ),
+              //
             ),
             child: SafeArea(
               child: SingleChildScrollView(
