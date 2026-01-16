@@ -33,16 +33,16 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Center(
+      body:Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: const [
-            CircularProgressIndicator(),
+            Icon(Icons.hourglass_bottom, size: 48, color: Colors.amber),
             SizedBox(height: 16),
-            Text('Loading...', style: TextStyle(fontSize: 16)),
+            Text('Please wait...', style: TextStyle(fontSize: 16)),
           ],
         ),
-      ),
+      )
     );
   }
 }

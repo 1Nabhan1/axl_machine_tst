@@ -7,8 +7,9 @@ class CacheService {
   static Future<void> clearAll(bool logout) async {
     await Hive.box('todos').clear();
     await Hive.box('favorites').clear();
-    // await Hive.box('user').clear();
+
     if(logout) {
+      await Hive.box('user').clear();
       await _sessionService.clear(); // SharedPreferences
     }
   }
